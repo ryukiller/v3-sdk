@@ -1,5 +1,5 @@
 import JSBI from 'jsbi'
-import { CurrencyAmount, Token, TradeType, WETH9 } from '@uniswap/sdk-core'
+import { CurrencyAmount, Token, TradeType, WETH9 } from '@ariswap/sdk-core'
 import { FeeAmount, TICK_SPACINGS } from './constants'
 import { Pool } from './entities/pool'
 import { SwapQuoter } from './quoter'

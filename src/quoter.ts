@@ -1,8 +1,8 @@
 import { Interface } from '@ethersproject/abi'
-import { BigintIsh, Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
+import { BigintIsh, Currency, CurrencyAmount, TradeType } from '@ariswap/sdk-core'
 import { encodeRouteToPath } from './utils'
 import { MethodParameters, toHex } from './utils/calldata'
-import IQuoter from '@uniswap/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json'
+import IQuoter from '@ariswap/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json'
 import { Route } from './entities'
 import invariant from 'tiny-invariant'
 
@@ -17,7 +17,7 @@ export interface QuoteOptions {
 }
 
 /**
- * Represents the Uniswap V3 QuoterV1 contract with a method for returning the formatted
+ * Represents the Ariswap V3 QuoterV1 contract with a method for returning the formatted
  * calldata needed to call the quoter contract.
  */
 export abstract class SwapQuoter {
